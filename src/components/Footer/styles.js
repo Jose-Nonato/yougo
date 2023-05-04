@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterD = styled.div`
+export const FooterD = styled.footer`
     width: 100%;
 
     .superior {
@@ -66,8 +66,8 @@ export const FooterD = styled.div`
                 margin: 0 10px;
             }
             img {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
             }
         }
     }

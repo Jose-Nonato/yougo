@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderD = styled.div`
+export const HeaderD = styled.header`
     /* width: 100%; */
     display: flex;
     justify-content: space-around;
