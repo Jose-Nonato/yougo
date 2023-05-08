@@ -62,13 +62,7 @@ export const FooterD = styled.footer`
         padding: 10px 25px;
 
         .centroInferior {
-            a {
-                margin: 0 10px;
-            }
-            img {
-                width: 30px;
-                height: 30px;
-            }
+            text-align: center;
         }
     }
 `;

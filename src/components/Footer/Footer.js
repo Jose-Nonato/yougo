@@ -1,9 +1,14 @@
 import React from "react";
 import { FooterD } from "./styles";
-import icon_facebook from "../../assets/icon_facebook.png";
-import icon_instagram from "../../assets/icon_instagram.png";
-import icon_whats from "../../assets/icon_whats.png";
-import icon_gmail from "../../assets/icon_gmail.png";
+// import icon_facebook from "../../assets/icon_facebook.png";
+// import icon_instagram from "../../assets/icon_instagram.png";
+// import icon_whats from "../../assets/icon_whats.png";
+// import icon_gmail from "../../assets/icon_gmail.png";
+import { Facebook } from "@styled-icons/entypo-social/Facebook";
+import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
+import { Whatsapp } from "@styled-icons/boxicons-logos/Whatsapp";
+import { EmailOutline } from "@styled-icons/evaicons-outline/EmailOutline";
+
 import google_play from "../../assets/google_play.png";
 import app_store from "../../assets/app_store.png";
 import logo from "../../assets/logo.png";
@@ -45,12 +50,16 @@ export default function Footer() {
             <div className="inferior">
                 <img style={{width: "5%", height: "5%"}} src={logo_reduzida} alt="Logo YouGO!" />
                 <div className="centroInferior">
-                    <a href="/"><img src={icon_facebook} alt="Icone" /></a>
+                    <a href="/"><Facebook style={{width: "2%", height: "2%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="/"><Instagram style={{width: "2%", height: "2%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="/"><Whatsapp style={{width: "2%", height: "2%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="/"><EmailOutline style={{width: "2%", height: "2%", color: "#000000"}}/></a>
+                    {/* <a href="/"><img src={icon_facebook} alt="Icone" /></a>
                     <a href="/"><img src={icon_instagram} alt="Icone" /></a>
                     <a href="/"><img src={icon_whats} alt="Icone" /></a>
-                    <a href="/"><img src={icon_gmail} alt="Icone" /></a>
+                    <a href="/"><img src={icon_gmail} alt="Icone" /></a> */}
                 </div>
-                <p style={{textAlign: "center"}}>Termos de Serviço<br/>e Privacidade</p>
+                <p style={{textAlign: "center"}}>Termos de Serviço e Privacidade</p>
             </div>
         </FooterD>
     );
