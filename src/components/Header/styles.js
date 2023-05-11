@@ -8,9 +8,26 @@ export const HeaderD = styled.header`
     background-color: #9300A0;
     padding: 10px 15px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     img {
         width: 8%;
         height: 8%;
+
+        @media (max-width: 768px) {
+            width: 15%;
+            height: 15%;
+        }
+    }
+
+    .links {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     .links a {
@@ -19,6 +36,10 @@ export const HeaderD = styled.header`
         font-size: 18;
         position: relative;
         padding: 0 10px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
     }
     .links a + a {
         margin-left: 15px;
