@@ -10,6 +10,11 @@ export const FooterD = styled.footer`
         align-items: center;
         padding: 15px 25px;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+
         .direitaSuperior {
             button {
                 background-color: #26CC4C;
@@ -36,6 +41,11 @@ export const FooterD = styled.footer`
                 text-decoration: none;
                 color: black;
             }
+
+            @media (max-width: 768px) {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
         }
 
         .esquerdaSuperior {
@@ -60,6 +70,11 @@ export const FooterD = styled.footer`
         justify-content: space-between;
         align-items: center;
         padding: 10px 25px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+        }
 
         .centroInferior {
             text-align: center;

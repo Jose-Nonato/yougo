@@ -17,8 +17,8 @@ export const HeaderD = styled.header`
         height: 8%;
 
         @media (max-width: 768px) {
-            width: 15%;
-            height: 15%;
+            width: 20%;
+            height: 20%;
         }
     }
 
@@ -40,9 +40,6 @@ export const HeaderD = styled.header`
         @media (max-width: 768px) {
             margin-bottom: 15px;
         }
-    }
-    .links a + a {
-        margin-left: 15px;
     }
     .links a::after {
         content: "";
