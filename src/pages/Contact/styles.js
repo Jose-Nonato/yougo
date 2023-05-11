@@ -95,6 +95,7 @@ export const Forms = styled.div`
             font-weight: 600;
             font-size: 16px;
             border-radius: 10px;
+            cursor: pointer;
         }
     }
 `;
