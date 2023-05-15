@@ -72,7 +72,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="texts">
-                <div className="text">
+                    <div className="text">
                         <h1>3.</h1>
                         <h3>Faça o login</h3>
                         <p>Entre com o seu usuário</p>
@@ -122,14 +122,14 @@ export default function Home() {
                         <img src={client} alt="Cliente" />
                         <h2>Nome do Cliente</h2>
                         <p>Leitora há 3 anos.</p>
-                        <img src={star_icon} alt="Estrelas" />
+                        <img className="stars" src={star_icon} alt="Estrelas" />
                         <p>Lorem ipsum dolor sit amet. Et aperiam consequatur nam assumenda voluptatem sit laudantium molestiae et atque molestias vel perspiciatis internos sed enim facere et officia accusantium. Et voluptatum consequatur eum culpa maiores sit commodi consectetur quo libero illum.</p>
                     </div>
                     <div className="card">
                         <img src={client} alt="Cliente" />
                         <h2>Nome do Cliente</h2>
                         <p>Leitora há 4 anos.</p>
-                        <img src={star_icon} alt="Estrelas" />
+                        <img className="stars" src={star_icon} alt="Estrelas" />
                         <p>Lorem ipsum dolor sit amet. Et aperiam consequatur nam assumenda voluptatem sit laudantium molestiae et atque molestias vel perspiciatis internos sed enim facere et officia accusantium. Et voluptatum consequatur eum culpa maiores sit commodi consectetur quo libero illum.</p>
                     </div>
                 </div>

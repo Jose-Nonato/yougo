@@ -33,6 +33,18 @@ export const Modal = styled.div`
             font-weight: 600;
             color: #FFF;
         }
+
+        @media (max-width: 768px) {
+            width: 50%;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+    .imgs {
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 `;
 
@@ -41,12 +53,28 @@ export const Proposal = styled.div`
 
     .texts {
         width: 40%;
+        @media (max-width: 768px) {
+            width: 80%;
+        }
     }
 
     .icons {
         padding: 15px 0px 10px 0px;
         display: flex;
         justify-content: space-around;
+        text-align: justify;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .card-text {
+            text-align: justify;
+            padding: 0px 6px;
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
     }
 `;
 
@@ -59,6 +87,10 @@ export const How = styled.div`
     color: #FFF;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
 
+    @media (max-width: 390px) {
+        padding: 9px;
+    }
+
     h1 {
         text-align: center;
     }
@@ -68,6 +100,18 @@ export const How = styled.div`
         justify-content: space-around;
         text-align: center;
         padding: 15px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            padding: 5px;
+        }
+    }
+
+    .text {
+        @media (max-width: 768px) {
+            padding: 5px;
+        }
     }
 `;
 
@@ -92,6 +136,10 @@ export const Plans = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         
         .card {
             background-color: #FFF;
@@ -130,6 +178,11 @@ export const Plans = styled.div`
 
         .second-card {
             margin-left: 40px;
+
+            @media (max-width: 768px) {
+                margin-left: 0px;
+                margin-top: 15px;
+            }
         }
     }
 `;
@@ -157,11 +210,24 @@ export const Avaliation = styled.div`
         display: flex;
         justify-content: space-evenly;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .card {
-            width: 40%;
+            /* width: 40%; */
             box-shadow: 4px 4px 4px rgba(0,0,0,.25);
             border-radius: 20px;
             padding: 20px;
+
+            @media (max-width: 768px) {
+                margin-top: 5px;
+
+                .stars {
+                    width: 45%;
+                }
+            }
         }
     }
 `;

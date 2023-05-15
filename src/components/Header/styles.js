@@ -19,6 +19,7 @@ export const HeaderD = styled.header`
         @media (max-width: 768px) {
             width: 20%;
             height: 20%;
+            margin-bottom: 5px;
         }
     }
 
