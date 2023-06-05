@@ -46,6 +46,16 @@ export const Cards = styled.div`
         width: 100px;
         height: 100px;
     }
+
+    @media (max-width: 700px) {
+        & {
+            flex-direction: column;
+        }
+        .icon {
+            width: 70px;
+            height: 70px;
+        }
+    }
 `;
 
 export const Forms = styled.div`
@@ -61,14 +71,18 @@ export const Forms = styled.div`
 
         h2 {
             padding: 10px 0;
+
+            @media(max-width: 700px) {
+                padding: 0px;
+                text-align: center;
+            }
         }
 
         .info {
             display: flex;
-            justify-content: space-evenly;
-            
+
             input {
-                width: 40%;
+                width: 100%;
                 padding: 10px 15px;
                 outline: none;
                 margin: 15px;
@@ -81,12 +95,12 @@ export const Forms = styled.div`
 
             textarea {
                 outline: none;
-                width: 90%;
+                width: 100%;
             }
         }
 
         button {
-            width: 30%;
+            width: 40%;
             margin-top: 20px;
             border: none;
             background-color: #28CA50;
@@ -96,6 +110,11 @@ export const Forms = styled.div`
             font-size: 16px;
             border-radius: 10px;
             cursor: pointer;
+
+            
+            @media(max-width: 700px) {
+                width: 100%;
+            }
         }
     }
 `;
@@ -115,8 +134,32 @@ export const Images = styled.div`
         }
     }
 
-    .teste {
-        display: flex;
-        justify-content: space-evenly;
+    .images-container {
+        width: 95%;
+        margin: 0 auto;
+        .texts-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 0px;
+
+            @media(max-width: 768px) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            img {
+                width: 50%;
+                @media(max-width: 768px) {
+                    width: 80%;
+                    margin: 10px;
+                }
+            }
+
+            .text {
+                h3 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 `;

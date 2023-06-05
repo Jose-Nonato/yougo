@@ -47,17 +47,17 @@ export default function Contact() {
 
                 <Images>
                     <h1>Onde nos encontrar ?</h1>
-                    <div className="teste">
-                        <div className="text">
-                            <img src={Aeroporto} alt="Localização Aeroporto"/>
-                            <div>
+                    <div className="images-container">
+                        <div className="texts-container">
+                            <div className="text">
                                 <h3>Aeroporto Santos Dumont Rio de Janeiro</h3>
                                 <p>Stand 1 - térreo do aeroporto, ao lado do check in da azul linhas aéreas.<br/>Stand 2 - corredor do aeroporto no segundo andar próximo a entrada do embarque doméstico.</p>
                             </div>
+                            <img src={Aeroporto} alt="Localização Aeroporto"/>
                         </div>
-                        <div className="text">
+                        <div className="texts-container">
                             <img src={Belem} alt="Localização Belem"/>
-                            <div>
+                            <div className="text">
                                 <h3>Aeroporto de Belém</h3>
                                 <p>Stand 1 - área externa na frente do check in das companhias aéreas.<br/>Stand 2 - área restrita do aeroporto, ao lado do portão de embarque 4.</p>
                             </div>
