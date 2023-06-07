@@ -11,7 +11,7 @@ export default function Header() {
                 <a href="/about">Sobre Nós</a>
                 <a href="/contact">Contato</a>
                 <a href="/tutorial-access">🔶Tutorial de Acesso</a>
-                <a href="/proof-reading">🔷Voucher de Leitura</a>
+                <a href="/password">🔷Voucher de Leitura</a>
             </div>
         </HeaderD>
     );
