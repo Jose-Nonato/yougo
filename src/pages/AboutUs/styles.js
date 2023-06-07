@@ -18,6 +18,12 @@ export const Modal = styled.div`
     text-align: center;
     color: #FFF;
 
+    .texts{
+        @media (max-width: 1024px) {
+            width: 80%;
+        }
+    }
+
     h1 {
         font-size: 40px;
         padding-bottom: 15px;
@@ -60,13 +66,21 @@ export const AboutD = styled.div`
 
     .texts {
         display: flex;
-        justify-content: space-around;
-        width: 90%;
+        justify-content: space-between;
+        /* width: 90%; */
         margin: 0 auto;
+        text-align: justify;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
     }
 
     .text {
-        width: 100%;
+        width: 85%;
     }
 
     .container-card {
@@ -111,14 +125,24 @@ export const Collaborators = styled.div`
             display: flex;
             justify-content: space-evenly;
             padding: 20px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         .card-colaborador {
-            width: 30%;
+            width: 40%;
             background-color: #FFF;
             border-radius: 10px;
             padding: 15px;
             box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+            
+            @media (max-width: 768px) {
+                width: 85%;
+                margin-top: 20px;
+            }
 
             h2 {
                 padding: 5px;

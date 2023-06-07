@@ -24,7 +24,7 @@ export default function About() {
                 <h1>Sobre Nós</h1>
 
                 <div className="texts">
-                    <div className="text">
+                    <div className="text" style={{marginRight: '5px'}}>
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <p>Aut eligendi nihil aut voluptatum quia ut dolores quia aut possimus dolorum. Ad asperiores commodi ut autem quibusdam vel amet doloribus ut nulla accusantium qui odio architecto. Sit aperiam labore et soluta neque eos similique nesciunt et iure magni aut maiores suscipit nam quas libero. Et doloribus veniam et exercitationem ducimus non nihil distinctio et similique sunt ab animi quis ut quam itaque At enim officiis.<br/>Aut eligendi nihil aut voluptatum quia ut dolores quia aut possimus dolorum. Ad asperiores commodi ut autem quibusdam vel amet doloribus ut nulla accusantium qui odio architecto. Sit aperiam labore et soluta neque eos similique nesciunt et iure magni aut maiores suscipit nam quas libero. Et doloribus veniam et exercitationem ducimus non nihil distinctio et similique sunt ab animi quis ut quam itaque At enim officiis.</p>
                     </div>
