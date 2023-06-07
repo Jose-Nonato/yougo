@@ -30,8 +30,8 @@ export default function Footer() {
                         <a href="/">Início</a><br/>
                         <a href="/about">Sobre Nós</a><br/>
                         <a href="/contact">Contato</a><br/>
-                        <a href="/proof-reading">Tutorial de Acesso</a><br/>
-                        <a href="/tutorial-access">Voucher de Leitura</a>
+                        <a href="/tutorial-access">Tutorial de Acesso</a><br/>
+                        <a href="/proof-reading">Voucher de Leitura</a>
                     </nav>
                 </div>
                 <div className="esquerdaSuperior">
