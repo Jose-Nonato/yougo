@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-// import Logo from "../../assets/logo.png";
 import { Container, Modal, Proposal, How, Plans, Doubts, Avaliation } from "./styles";
-import bem_icon from "../../assets/bem_icon.png";
-import health_icon from "../../assets/health_icon.png";
-import leitura_icon from "../../assets/leitura_icon.png";
-import stream_icon from "../../assets/stream_icon.png";
+
+import { Books } from "@styled-icons/icomoon/Books";
+import { HeadphonesSoundWave } from "@styled-icons/fluentui-system-filled/HeadphonesSoundWave";
+import { LearningApp } from "@styled-icons/fluentui-system-filled/LearningApp";
+import { RateReview } from "@styled-icons/material-sharp/RateReview";
+
 import star_icon from "../../assets/star_icon.png";
 import client from "../../assets/client.png";
 import CardDropdownComp from "../../components/CardDropdown/CardDropdown";
@@ -20,7 +21,7 @@ export default function Home() {
             <Modal>
                 <div className="text">
                     <h1>YOU GO!</h1>
-                    <p>LIBERTE SUA IMAGINAÇÃO E DESCUBRA UM MUNDO DE CONHECIMENTOS E ENTRETENIMENTOS NA PALMA DA SUA MÃO!</p>
+                    <p>Você a frente!<br/>Aqui você tem acesso a cursos, ebooks, resenhas e muito mais na velocidade que o mundo atual exige. Desfrute conhecimento ilimitado na palma da sua mão!</p>
                     <button><a href="/contact">QUERO SABER MAIS!</a></button>
                 </div>
                 <div className="imgs">
@@ -35,24 +36,24 @@ export default function Home() {
                 </div>
                 <div className="icons">
                     <div className="card-text">
-                        <img src={leitura_icon} alt="icone" />
+                        <Books className="icon" />
                         <h3>Leitura</h3>
-                        <p>Lorem ipsum dolor sit amet. Et odit dolor sit tempora temporibus eum rerum obcaecati id sint alias ut omnis pariatur eos accusantium modi non voluptas harum.</p>
+                        <p>Descubra a facilidade de mergulhar em um oceano de conhecimento com o nosso app. Com ebooks cativantes ler e aprender nunca foi tão envolvente e acessível!</p>
                     </div>
                     <div className="card-text">
-                        <img src={health_icon} alt="icone" />
-                        <h3>Bem-Estar</h3>
-                        <p>Lorem ipsum dolor sit amet. Et odit dolor sit tempora temporibus eum rerum obcaecati id sint alias ut omnis pariatur eos accusantium modi non voluptas harum.</p>
+                        <HeadphonesSoundWave className="icon" />
+                        <h3>Aúdiobooks</h3>
+                        <p>Perceba as vantagens de ouvir ebooks e resenhas críticas, enquanto aproveita a conveniência e a liberdade de desfrutar do conhecimento onde quer que esteja. </p>
                     </div>
                     <div className="card-text">
-                        <img src={stream_icon} alt="icone" />
-                        <h3>Entretenimento</h3>
-                        <p>Lorem ipsum dolor sit amet. Et odit dolor sit tempora temporibus eum rerum obcaecati id sint alias ut omnis pariatur eos accusantium modi non voluptas harum.</p>
+                        <LearningApp className="icon" />
+                        <h3>Cursos</h3>
+                        <p>Abra portas para novas oportunidades e expanda seu repertório de habilidades com nossa seleção de cursos capacitantes. Tudo isso ao alcance de suas mãos com o nosso aplicativo.</p>
                     </div>
                     <div className="card-text">
-                        <img src={bem_icon} alt="icone" />
-                        <h3>Saúde</h3>
-                        <p>Lorem ipsum dolor sit amet. Et odit dolor sit tempora temporibus eum rerum obcaecati id sint alias ut omnis pariatur eos accusantium modi non voluptas harum.</p>
+                        <RateReview className="icon" />
+                        <h3>Resenhas</h3>
+                        <p>Satisfaça sua curiosidade literária e embarque em leituras extraordinárias com agilidade e praticidade do nosso aplicativo. Resenhas para você ler e ouvir e eleve sua experiência literária.</p>
                     </div>
                 </div>
             </Proposal>

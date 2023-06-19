@@ -59,7 +59,7 @@ export const Proposal = styled.div`
     }
 
     .icons {
-        padding: 15px 0px 10px 0px;
+        padding: 40px 0px;
         display: flex;
         justify-content: space-around;
         text-align: justify;
@@ -71,8 +71,18 @@ export const Proposal = styled.div`
         .card-text {
             text-align: justify;
             padding: 0px 6px;
+            margin: 10px;
             @media (max-width: 768px) {
                 text-align: center;
+            }
+        }
+
+        .icon {
+            width: 60%;
+            margin-bottom: 5px;
+
+            @media (max-width: 768px) {
+                width: 30%;
             }
         }
     }

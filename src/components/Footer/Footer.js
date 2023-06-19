@@ -50,10 +50,10 @@ export default function Footer() {
             <div className="inferior">
                 <img src={logo_reduzida} alt="Logo YouGO!" />
                 <div className="centroInferior">
-                    <a href="/"><Facebook style={{width: "4%", height: "4%", color: "#000000", marginRight: "10px"}}/></a>
-                    <a href="/"><Instagram style={{width: "4%", height: "4%", color: "#000000", marginRight: "10px"}}/></a>
-                    <a href="/"><Whatsapp style={{width: "4%", height: "4%", color: "#000000", marginRight: "10px"}}/></a>
-                    <a href="/"><EmailOutline style={{width: "4%", height: "4%", color: "#000000"}}/></a>
+                    <a href="/"><Facebook style={{width: "2.3%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="/"><Instagram style={{width: "2.3%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="/"><Whatsapp style={{width: "2.3%", color: "#000000", marginRight: "10px"}}/></a>
+                    <a href="/"><EmailOutline style={{width: "2.3%", color: "#000000"}}/></a>
                     {/* <a href="/"><img src={icon_facebook} alt="Icone" /></a>
                     <a href="/"><img src={icon_instagram} alt="Icone" /></a>
                     <a href="/"><img src={icon_whats} alt="Icone" /></a>
