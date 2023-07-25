@@ -1,76 +1,27 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { Container, Modal, AboutD, Collaborators } from "./styles";
-import Client from "../../assets/client.png";
-import Facebook from "../../assets/icon_facebook.png";
-import Instagram from "../../assets/icon_instagram.png";
-import Gmail from "../../assets/icon_gmail.png";
+import { Container, Image, Describe } from "./styles";
+import Amico from "./assets/About.png";
 
 export default function About() {
     return(
         <Container>
             <Header />
 
-            <Modal>
-                <div className="texts">
-                    <h1>YouGo! App</h1>
-                    <p>Lorem ipsum dolor sit amet. Et provident dolore ut dolorem quae ut vero accusamus qui doloremque deserunt ut quos ipsam.</p>
-                    <button><a href="/contact">ENTRE EM CONTATO</a></button>
-                </div>
-            </Modal>
+            <Image>
+                <img src={Amico} alt="Imagem Sobre"/>
+            </Image>
 
-            <AboutD>
+            <Describe>
                 <h1>Sobre Nós</h1>
-
-                <div className="texts">
-                    <div className="text" style={{marginRight: '5px'}}>
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <p>Aut eligendi nihil aut voluptatum quia ut dolores quia aut possimus dolorum. Ad asperiores commodi ut autem quibusdam vel amet doloribus ut nulla accusantium qui odio architecto. Sit aperiam labore et soluta neque eos similique nesciunt et iure magni aut maiores suscipit nam quas libero. Et doloribus veniam et exercitationem ducimus non nihil distinctio et similique sunt ab animi quis ut quam itaque At enim officiis.<br/>Aut eligendi nihil aut voluptatum quia ut dolores quia aut possimus dolorum. Ad asperiores commodi ut autem quibusdam vel amet doloribus ut nulla accusantium qui odio architecto. Sit aperiam labore et soluta neque eos similique nesciunt et iure magni aut maiores suscipit nam quas libero. Et doloribus veniam et exercitationem ducimus non nihil distinctio et similique sunt ab animi quis ut quam itaque At enim officiis.</p>
-                    </div>
-                    <div className="container-card">
-                        <div className="card">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Aut eligendi nihil aut voluptatum quia ut dolores quia aut possimus dolorum. Ad asperiores commodi ut autem quibusdam vel amet doloribus ut nulla accusantium qui odio architecto. Sit aperiam labore et soluta neque eos similique nesciunt et iure magni aut maiores suscipit nam quas libero.</p>
-                        </div>
-                        <div className="card">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Aut eligendi nihil aut voluptatum quia ut dolores quia aut possimus dolorum. Ad asperiores commodi ut autem quibusdam vel amet doloribus ut nulla accusantium qui odio architecto. Sit aperiam labore et soluta neque eos similique nesciunt et iure magni aut maiores suscipit nam quas libero.</p>
-                        </div>
-                    </div>
-                </div>
-            </AboutD>
-
-            <Collaborators>
-                <div className="card">
-                    <h1>Colaboradores</h1>
-                    <div className="container-card">
-                        <div className="card-colaborador">
-                            <img src={Client} alt="Foto do Cliente" />
-                            <h2>Nome do Colaborador</h2>
-                            <p>Título do Colaborador</p>
-                            <div className="icons">
-                                <img src={Facebook} alt="Foto do Facebook" />
-                                <img src={Instagram} alt="Foto do Instagram" />
-                                <img src={Gmail} alt="Foto do Gmail" />
-                            </div>
-                            <p>Lorem ipsum dolor sit amet. Et aperiam consequatur nam assumenda voluptatem sit laudantium molestiae et atque molestias vel perspiciatis internos sed enim facere et officia accusantium. Et voluptatum consequatur eum culpa maiores sit commodi consectetur quo libero illum.</p>
-                        </div>
-
-                        <div className="card-colaborador">
-                            <img src={Client} alt="Foto do Cliente" />
-                            <h2>Nome do Colaborador</h2>
-                            <p>Título do Colaborador</p>
-                            <div className="icons">
-                                <img src={Facebook} alt="Foto do Facebook" />
-                                <img src={Instagram} alt="Foto do Instagram" />
-                                <img src={Gmail} alt="Foto do Gmail" />
-                            </div>
-                            <p>Lorem ipsum dolor sit amet. Et aperiam consequatur nam assumenda voluptatem sit laudantium molestiae et atque molestias vel perspiciatis internos sed enim facere et officia accusantium. Et voluptatum consequatur eum culpa maiores sit commodi consectetur quo libero illum.</p>
-                        </div>
-                    </div>
-                </div>
-            </Collaborators>
+                <p>Somos o seu aplicativo mais completo, criao com base na demanda social por velocidade e eficiência. Aqui na You Go!, proporcionamos a você uma experiência de consumo de conteúdo de alta qualidade, de forma rápida e efetiva.</p>
+                <p>Imagine-se sempre à frente, pronto para encarar novos desafios e encarar o desconhecido. Esse é o nosso objetivo principal. Queremos impulsionar você rumo ao sucesso, oferecendo cursos abrangentes que permitem aprender novas habilidades. expandir seus horizonte e se destacar em qualquer campo que escolher.</p>
+                <p>Mas não paramos por aí. Queremos que você possa viajar no mundo das palavras a qualquer momento, em qualquer lugar. Por isso, disponibilizamos um extensa biblioteca de ebooks para você ler e ampliar o seu conhecimento. </p>
+                <p>E como amantes da literatura, entendemos a importância de resenhas críticas bem estruturadas. Por isso, reunimos uma equipe de apaixonados por livros, que compartilham suas análises e opiniões sobre as mais diversas obras literárias. Dessa forma, você pode desfrutar de resenhas confiáveis e detalhadas, ajudando-o a descobrir novas leituras que combinam com seus gostos e interesses.</p>
+                <p>Na You Go!, acreditamos que informação é poder. Queremos capacitar você com conhecimento e entretenimento, proporcionando uma experiência única e enriquecedora. Então, embarque nessa jornada conosco onde a aventura e o aprendizado estão ao alcance de um toque.</p>
+                <p style={{margin: "10px 0px"}}><strong>Seja o protagonista da sua própria história na You Go!</strong></p>
+            </Describe>
 
             <Footer />
         </Container>

@@ -1,7 +1,10 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { Container, Text, Cards } from "./styles";
+import { Container, Text } from "./styles";
+
+import Passos from "./assets/Passos.png";
+import PassosMobile from "./assets/PassosMobile.png";
 
 export default function Tutorial() {
     return(
@@ -9,29 +12,12 @@ export default function Tutorial() {
             <Header />
 
             <Text>
-                <h1>Tutoriais de Acesso</h1>
-                <p>Caso tenha dúvidas para acessar nosso aplicativo assista os vídeos a seguir para sanar suas dúvidas.</p>
+                <h1>Tutorial de Acesso</h1>
+                <div className="img">
+                    <img src={Passos} alt="Passo a Passo" className="img-one" />
+                    <img src={PassosMobile} alt="Passo a Passo" className="img-two" />
+                </div>
             </Text>
-
-            <Cards>
-
-                <div className="card">
-                    <span>IOS</span>
-                    <h2>Saiba como instalar nosso app em seu IOS</h2>
-                    <div className="video-container">
-                        <iframe src="https://www.youtube.com/embed/IluUDKKYjB8" title="Vídeo do Youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <p>Android</p>
-                    <h2>Saiba como instalar nosso app em seu Android</h2>
-                    <div className="video-container">
-                        <iframe src="https://www.youtube.com/embed/IluUDKKYjB8" title="Vídeo do Youtube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-            </Cards>
 
             <Footer />
         </Container>

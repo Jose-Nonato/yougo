@@ -2,9 +2,11 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Container, Texts, Cards, Forms, Images } from "./styles";
-import { ShareLocation, Phone, Email } from '@styled-icons/material';
-import Aeroporto from "./assets/Aeroporto.png";
-import Belem from "./assets/Belem.png";
+
+import Adress_Rafiki from "./assets/Address_Rafiki.png";
+import Address from "./assets/Address.png";
+import CellPhone from "./assets/CellPhone.png";
+import Mail from "./assets/Mail.png";
 
 export default function Contact() {
     return(
@@ -18,16 +20,21 @@ export default function Contact() {
 
                 <Cards>
                     <div className="card">
-                        <ShareLocation className="icon"/>
-                        <p>Rua Pequena 102</p>
+                        {/* <ShareLocation className="icon"/> */}
+                        <img src={Adress_Rafiki} alt="Adress" className="icon"/>
+                        <p>Edifício Cirilo Rio, 3º andar<br/>
+                        Campina - Rua Senador Manoel<br/>
+                        Barata, 925 - Belém/PA.</p>
                     </div>
                     <div className="card">
-                        <Phone className="icon"/>
-                        <p>(91) 99999-9999</p>
+                        {/* <Phone className="icon"/> */}
+                        <img src={CellPhone} alt="Cell Phone" className="icon"/>
+                        <p>(11) 91555-5376</p>
                     </div>
                     <div className="card">
-                        <Email className="icon"/>
-                        <p>yougo@gmail.com</p>
+                        {/* <Email className="icon"/> */}
+                        <img src={Mail} alt="Mail" className="icon" />
+                        <p>atendimentoaocliente@yougoapp.com.br</p>
                     </div>
                 </Cards>
 
@@ -46,6 +53,30 @@ export default function Contact() {
                 </Forms>
 
                 <Images>
+                    <div className="text">
+                        <div>
+                            <h1>Aeroporto Santos Dumont Rio de Janeiro</h1>
+                            <p>Stand 1 - térreo do aeroporto, ao lado do check in da azul linhas aéreas.</p>
+                            <p>Stand 2 - corredor do aeroporto no segundo andar próximo a entrada do embarque doméstico.</p>
+                        </div>
+                        <div>
+                            <h1>Aeroporto de Belém</h1>
+                            <p>Stand 1 - área externa na frente do check in das companhias aéreas.</p>
+                            <p>Stand 2 - área restrita do aeroporto, ao lado do portão de embarque 4.</p>
+                        </div>
+                    </div>
+                    <div className="text">
+                        <div>
+                            <h1>Aeroporto Congonhas de São Paulo</h1>
+                            <p>Stand 1 - Saguão principal - Embaixo da escada rolante.</p>
+                        </div>
+                        <div>
+                            <img src={Address} alt="Address" className="image" />
+                        </div>
+                    </div>
+                </Images>
+
+                {/* <Images>
                     <h1>Onde nos encontrar ?</h1>
                     <div className="images-container">
                         <div className="texts-container">
@@ -53,17 +84,15 @@ export default function Contact() {
                                 <h3>Aeroporto Santos Dumont Rio de Janeiro</h3>
                                 <p>Stand 1 - térreo do aeroporto, ao lado do check in da azul linhas aéreas.<br/>Stand 2 - corredor do aeroporto no segundo andar próximo a entrada do embarque doméstico.</p>
                             </div>
-                            <img src={Aeroporto} alt="Localização Aeroporto"/>
                         </div>
                         <div className="texts-container">
-                            <img src={Belem} alt="Localização Belem"/>
                             <div className="text">
                                 <h3>Aeroporto de Belém</h3>
                                 <p>Stand 1 - área externa na frente do check in das companhias aéreas.<br/>Stand 2 - área restrita do aeroporto, ao lado do portão de embarque 4.</p>
                             </div>
                         </div>
                     </div>
-                </Images>
+                </Images> */}
 
             <Footer />
         </Container>

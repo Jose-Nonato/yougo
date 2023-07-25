@@ -15,42 +15,32 @@ export const Text = styled.div`
         display: block;
         margin-bottom: 10px;
     }
-`;
 
-export const Cards = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .img {
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
 
-    .card {
-        width: 60%;
-        margin: 40px 10px;
-        text-align: center;
-
-        @media(max-width: 700px) {
-            & {
-                width: 90%;
+        .img-one {
+            @media (max-width: 768px) {
+                display: none;
             }
         }
 
-        h2 {
-            padding: 10px;
+        .img-two {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
         }
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* Proporção do vídeo (16:9) */
-            height: 0;
-            overflow: hidden;
-        }
+        img {
+            width: 80%;
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            @media (max-width: 768px) {
+                width: 70%;
+            }
         }
     }
 `;

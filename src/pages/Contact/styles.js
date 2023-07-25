@@ -29,6 +29,7 @@ export const Cards = styled.div`
     display: flex;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
     padding: 20px 5px;
 
     .card {
@@ -62,7 +63,9 @@ export const Forms = styled.div`
     padding: 5px 0px 40px 0px;
 
     .card {
-        background-color: #F5F5F5;
+        /* background-color: #F5F5F5; */
+        background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
+        color: #FFF;
         width: 70%;
         border-radius: 20px;
         padding: 20px 40px;
@@ -82,10 +85,12 @@ export const Forms = styled.div`
             display: flex;
 
             input {
+                border: none;
                 width: 100%;
                 padding: 10px 15px;
                 outline: none;
                 margin: 15px;
+                border-radius: 5px;
             }
         }
 
@@ -94,8 +99,10 @@ export const Forms = styled.div`
             justify-content: center;
 
             textarea {
+                border: none;
                 outline: none;
                 width: 100%;
+                border-radius: 5px;
             }
         }
 
@@ -120,46 +127,55 @@ export const Forms = styled.div`
 `;
 
 export const Images = styled.div`
-    padding: 20px;
+    display: flex;
+    align-items: center;
 
-    h1 {
-        padding: 20px 0px;
-        &::after {
-            content: "";
-            width: 60px;
-            height: 5px;
-            background-color: #CA60C6;
-            border-radius: 10px;
-            display: block;
-        }
-    }
-
-    .images-container {
-        width: 95%;
-        margin: 0 auto;
-        .texts-container {
-            display: flex;
-            align-items: center;
-            padding: 10px 0px;
-
-            @media(max-width: 768px) {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            img {
-                width: 50%;
-                @media(max-width: 768px) {
-                    width: 80%;
-                    margin: 10px;
-                }
-            }
-
-            .text {
-                h3 {
-                    margin-bottom: 20px;
-                }
-            }
-        }
+    .image {
+        width: 80%;
     }
 `;
+
+// export const Images = styled.div`
+//     padding: 20px;
+
+//     h1 {
+//         padding: 20px 0px;
+//         &::after {
+//             content: "";
+//             width: 60px;
+//             height: 5px;
+//             background-color: #CA60C6;
+//             border-radius: 10px;
+//             display: block;
+//         }
+//     }
+
+//     .images-container {
+//         width: 95%;
+//         margin: 0 auto;
+//         .texts-container {
+//             display: flex;
+//             align-items: center;
+//             padding: 10px 0px;
+
+//             @media(max-width: 768px) {
+//                 flex-direction: column;
+//                 text-align: center;
+//             }
+
+//             img {
+//                 width: 50%;
+//                 @media(max-width: 768px) {
+//                     width: 80%;
+//                     margin: 10px;
+//                 }
+//             }
+
+//             .text {
+//                 h3 {
+//                     margin-bottom: 20px;
+//                 }
+//             }
+//         }
+//     }
+// `;

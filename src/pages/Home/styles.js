@@ -5,45 +5,58 @@ export const Container = styled.div`
 `;
 
 export const Modal = styled.div`
+    background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
     margin-top: 10px;
-    background-color: #9300A0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 40px 5px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 
     .text {
         width: 40%;
-        padding: 10px 0px;
-        h1 {
-            color: #26CC4C;
-        }
-        p {
-            margin: 10px 0px;
-            color: #FFF;
-        }
-        button {
-            border: none;
-            border-radius: 10px;
-            padding: 10px 8px;
-            background-color: #26CC4C;
-            cursor: pointer;
-        }
-        a {
-            text-decoration: none;
-            font-weight: 600;
-            color: #FFF;
-        }
 
         @media (max-width: 768px) {
-            width: 50%;
+            width: 80%;
             text-align: center;
-            padding: 20px;
+        }
+
+        img {
+            width: 50%;
+            padding: 10px 0px;
+        }
+
+        p {
+            color: #FFF;
+            font-size: 20px;
+        }
+
+        button {
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            margin: 10px 0px;
+            background-color: #26CC4C;
+            color: #FFF;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            outline: none;
         }
     }
 
-    .imgs {
+    img {
+        width: 30%;
+
         @media (max-width: 768px) {
-            display: none;
+            width: 80%;
         }
     }
 `;
@@ -78,7 +91,7 @@ export const Proposal = styled.div`
         }
 
         .icon {
-            width: 60%;
+            width: 30%;
             margin-bottom: 5px;
 
             @media (max-width: 768px) {
@@ -89,7 +102,8 @@ export const Proposal = styled.div`
 `;
 
 export const How = styled.div`
-    background-color: #CA60C6;
+    /* background-color: #CA60C6; */
+    background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
     width: 90%;
     border-radius: 20px;
     margin: 0 auto;
@@ -119,7 +133,9 @@ export const How = styled.div`
     }
 
     .text {
+        width: 30%;
         @media (max-width: 768px) {
+            width: 100%;
             padding: 5px;
         }
     }
@@ -163,14 +179,11 @@ export const Plans = styled.div`
 
             h1 {
                 margin-bottom: 10px;
+                color: #BA00FC;
             }
 
             p {
                 margin-bottom: 5px;
-            }
-
-            span {
-                font-size: 16px;
             }
 
             button {
@@ -198,7 +211,8 @@ export const Plans = styled.div`
 `;
 
 export const Doubts = styled.div`
-    background-color: #CA60C6;
+    /* background-color: #CA60C6; */
+    background-image: linear-gradient(to bottom, #9300A0, #CB20DA);
     padding: 10px 50px;
     margin-top: 20px;
 

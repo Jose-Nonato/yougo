@@ -20,8 +20,8 @@ export default function Footer() {
             <div className="superior">
                 <div className="direitaSuperior">
                     <img style={{padding: "10px 0px"}} src={logo} alt="Logo YouGO!" />
-                    <p>CNPJ: 000.000.000/00</p>
-                    <p>Edifício no centro, número 39</p>
+                    <p>CNPJ: 21.506.509/0001-80</p>
+                    <p>Ed. Cirilo Rio, 3º andar - Campina</p>
                     <button><a href="/contact">ABRIR NO MAPS</a></button>
                 </div>
                 <div className="centroSuperior">
@@ -36,8 +36,8 @@ export default function Footer() {
                 </div>
                 <div className="esquerdaSuperior">
                     <h3>Informações para Contato</h3>
-                    <p style={{fontWeight: 500}}>(91) 99999-9999</p>
-                    <p style={{fontWeight: 500}}>yougoapp@gmail.com</p>
+                    <p style={{fontWeight: 500}}>(11) 91555-5376</p>
+                    <p style={{fontWeight: 500}}>atendimentoaocliente@yougoapp.com.br</p>
                     <p style={{fontSize: 11}}>Já é um associado? Baixe nosso app.</p>
                     <a href="www.google.com">
                         <img src={google_play} alt="Imagem"/>
