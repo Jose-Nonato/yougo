@@ -98,20 +98,20 @@ const Controls = ({ audioRef, tracks, trackIndex, setTrackIndex, setCurrentTrack
     return(
         <div className="controls-wrapper">
             <div className="controls">
-                <button onClick={handlePrevious}>
+                <button onClick={handlePrevious} style={{backgroundColor: "#606060"}}>
                     <IoPlaySkipBackSharp />
                 </button>
-                <button onClick={skipBackward}>
+                <button onClick={skipBackward} style={{backgroundColor: "#606060"}}>
                 <IoPlayBackSharp />
                 </button>
 
-                <button onClick={togglePlayPause}>
+                <button onClick={togglePlayPause} style={{backgroundColor: "#26CC4C"}}>
                     {isPlaying ? <IoPauseSharp /> : <IoPlaySharp />}
                 </button>
-                <button onClick={skipForward}>
+                <button onClick={skipForward} style={{backgroundColor: "#606060"}}>
                     <IoPlayForwardSharp />
                 </button>
-                <button onClick={handleNext}>
+                <button onClick={handleNext} style={{backgroundColor: "#606060"}}>
                     <IoPlaySkipForwardSharp />
                 </button>
             </div>
@@ -157,7 +157,8 @@ export default function Player() {
     
     // eslint-disable-next-line
     const [currentTrack, setCurrentTrack] = useState(tracks[trackIndex]);
-
+    
+    // eslint-disable-next-line
     const [timeProgress, setTimeProgress] = useState(0);
     const [duration, setDuration] = useState(0);
 

@@ -129,53 +129,37 @@ export const Forms = styled.div`
 export const Images = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 
-    .image {
-        width: 80%;
+    @media(max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        /* padding: 10px; */
+
+        .major {
+            width: 80%;
+            padding-bottom: 30px;
+            @media(max-width: 768px) {
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+        .major-second {
+            width: 80%;
+            @media(max-width: 768px) {
+                width: 50%;
+                margin: auto;
+            }
+        }
+
+        img {
+            @media(max-width: 768px) {
+                width: 80%;
+            }
+        }
     }
 `;
-
-// export const Images = styled.div`
-//     padding: 20px;
-
-//     h1 {
-//         padding: 20px 0px;
-//         &::after {
-//             content: "";
-//             width: 60px;
-//             height: 5px;
-//             background-color: #CA60C6;
-//             border-radius: 10px;
-//             display: block;
-//         }
-//     }
-
-//     .images-container {
-//         width: 95%;
-//         margin: 0 auto;
-//         .texts-container {
-//             display: flex;
-//             align-items: center;
-//             padding: 10px 0px;
-
-//             @media(max-width: 768px) {
-//                 flex-direction: column;
-//                 text-align: center;
-//             }
-
-//             img {
-//                 width: 50%;
-//                 @media(max-width: 768px) {
-//                     width: 80%;
-//                     margin: 10px;
-//                 }
-//             }
-
-//             .text {
-//                 h3 {
-//                     margin-bottom: 20px;
-//                 }
-//             }
-//         }
-//     }
-// `;

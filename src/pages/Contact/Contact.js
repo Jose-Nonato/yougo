@@ -54,19 +54,19 @@ export default function Contact() {
 
                 <Images>
                     <div className="text">
-                        <div>
+                        <div className="major">
                             <h1>Aeroporto Santos Dumont Rio de Janeiro</h1>
                             <p>Stand 1 - térreo do aeroporto, ao lado do check in da azul linhas aéreas.</p>
                             <p>Stand 2 - corredor do aeroporto no segundo andar próximo a entrada do embarque doméstico.</p>
                         </div>
-                        <div>
+                        <div className="major">
                             <h1>Aeroporto de Belém</h1>
                             <p>Stand 1 - área externa na frente do check in das companhias aéreas.</p>
                             <p>Stand 2 - área restrita do aeroporto, ao lado do portão de embarque 4.</p>
                         </div>
                     </div>
                     <div className="text">
-                        <div>
+                        <div className="major-second">
                             <h1>Aeroporto Congonhas de São Paulo</h1>
                             <p>Stand 1 - Saguão principal - Embaixo da escada rolante.</p>
                         </div>
@@ -75,24 +75,6 @@ export default function Contact() {
                         </div>
                     </div>
                 </Images>
-
-                {/* <Images>
-                    <h1>Onde nos encontrar ?</h1>
-                    <div className="images-container">
-                        <div className="texts-container">
-                            <div className="text">
-                                <h3>Aeroporto Santos Dumont Rio de Janeiro</h3>
-                                <p>Stand 1 - térreo do aeroporto, ao lado do check in da azul linhas aéreas.<br/>Stand 2 - corredor do aeroporto no segundo andar próximo a entrada do embarque doméstico.</p>
-                            </div>
-                        </div>
-                        <div className="texts-container">
-                            <div className="text">
-                                <h3>Aeroporto de Belém</h3>
-                                <p>Stand 1 - área externa na frente do check in das companhias aéreas.<br/>Stand 2 - área restrita do aeroporto, ao lado do portão de embarque 4.</p>
-                            </div>
-                        </div>
-                    </div>
-                </Images> */}
 
             <Footer />
         </Container>

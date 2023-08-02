@@ -18,6 +18,7 @@ import PlaylistAmico from "./assets/playlist.png";
 
 import star_icon from "../../assets/star_icon.png";
 import client from "../../assets/client.png";
+import clientSecond from "./assets/cliente.png";
 import CardDropdownComp from "../../components/CardDropdown/CardDropdown";
 import { Check } from "@styled-icons/boxicons-regular/Check";
 
@@ -134,14 +135,14 @@ export default function Home() {
                     <div className="card">
                         <img src={client} alt="Cliente" />
                         <h2>Nome do Cliente</h2>
-                        <p>Leitora há 3 anos.</p>
+                        <p>Assinante a 6 meses.</p>
                         <img className="stars" src={star_icon} alt="Estrelas" />
                         <p>Lorem ipsum dolor sit amet. Et aperiam consequatur nam assumenda voluptatem sit laudantium molestiae et atque molestias vel perspiciatis internos sed enim facere et officia accusantium. Et voluptatum consequatur eum culpa maiores sit commodi consectetur quo libero illum.</p>
                     </div>
                     <div className="card">
-                        <img src={client} alt="Cliente" />
+                        <img src={clientSecond} alt="Cliente" />
                         <h2>Nome do Cliente</h2>
-                        <p>Leitora há 4 anos.</p>
+                        <p>Assinante a 1 ano.</p>
                         <img className="stars" src={star_icon} alt="Estrelas" />
                         <p>Lorem ipsum dolor sit amet. Et aperiam consequatur nam assumenda voluptatem sit laudantium molestiae et atque molestias vel perspiciatis internos sed enim facere et officia accusantium. Et voluptatum consequatur eum culpa maiores sit commodi consectetur quo libero illum.</p>
                     </div>

@@ -240,10 +240,26 @@ export const Avaliation = styled.div`
         }
 
         .card {
-            /* width: 40%; */
+            border-radius: 20px;
+            box-shadow: 4px 4px 4px rgba(0,0,0,.25);
+            width: 30%;
+            padding: 20px;
+
+            @media (max-width: 768px) {
+                margin: 5px auto;
+                width: 80%;
+
+                .stars {
+                    width: 45%;
+                }
+            }
+        }
+
+        /* .card {
+            width: 40%;
             box-shadow: 4px 4px 4px rgba(0,0,0,.25);
             border-radius: 20px;
-            padding: 20px;
+            padding: 10px 20px;
 
             @media (max-width: 768px) {
                 margin-top: 5px;
@@ -252,6 +268,6 @@ export const Avaliation = styled.div`
                     width: 45%;
                 }
             }
-        }
+        } */
     }
 `;
